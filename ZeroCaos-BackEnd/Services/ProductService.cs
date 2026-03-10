@@ -28,9 +28,9 @@ namespace ZeroCaos_BackEnd.Services
             if (prod == null) return null;
             prod.Name = product.Name;
             prod.Description = product.Description;
-            prod.stock = product.stock;
+            prod.Stock = product.Stock;
             prod.TypeStock = product.TypeStock;
-            prod.Foto = product.Foto;
+            //prod.Foto = product.Foto;
             prod.Code = product.Code;
             prod.ExpirationDate = product.ExpirationDate;
             await _context.SaveChangesAsync();
